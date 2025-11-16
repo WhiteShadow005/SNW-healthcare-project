@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — HealthCare Plus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+.page-hero {
+    background: #eaf7ff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-hero-inner h1 {
+    font-size: 38px;
+    color: #0b3d91;
+}
+
+.page-hero-inner p {
+    max-width: 700px;
+    margin: 10px auto;
+    color: #355079;
+}
+
+.contact-page {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form, .contact-info {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form h2, .contact-info h2, .contact-info h3 {
+    color: #007BFF;
+    margin-bottom: 12px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0da09a;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="media/logo.png" alt="HealthCare Plus Logo">
+        <span>HealthCare Plus</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-earth-africa"></i> About</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-truck-medical"></i> Services</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        <li class="spacer" aria-hidden="true"></li>
+        <li><a class="login-btn" href="login.html">Login</a></li>
+        <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Contact Us</h1>
+        <p>We are here to help. Reach out for support, appointments, or general inquiries.</p>
+      </div>
+    </section>
+
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form onsubmit="return false;">
+              <input type="text" placeholder="Full name" required />
+              <input type="email" placeholder="Email address" required />
+              <input type="tel" placeholder="Phone (optional)" />
+              <textarea placeholder="How can we help?" required></textarea>
+              <button type="submit" class="btn-accent">Send message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h2>Get in touch</h2>
+            <p>Email: <a href="mailto:hello@healthcareplus.com">hello@healthcareplus.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 123 Health Ave, Suite 100</p>
+            <h3>Office hours</h3>
+            <p>Mon - Fri: 9:00am - 6:00pm</p>
+            <p>Sat: 10:00am - 2:00pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta-footer">
+    <div class="cta-inner">
+      <h2>Need quick help?</h2>
+      <p>Call our support line or send a message and we will respond as soon as possible.</p>
+      <div class="cta-actions">
+        <a class="btn-accent" href="tel:+1234567890">Call now</a>
+        <a class="btn-outline" href="mailto:hello@healthcareplus.com">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Join HealthCare Plus</h4>
+          <ul>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="plans.html">Health Plans</a></li>
+            <li><a href="consultants.html">Consultants</a></li>
+            <li><a href="individuals.html">Individuals</a></li>
+            <li><a href="providers.html">Become a Provider</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="fertility.html">Fertility & Family</a></li>
+            <li><a href="maternity.html">Maternity & Newborn</a></li>
+            <li><a href="parenting.html">Parenting & Pediatrics</a></li>
+            <li><a href="menopause.html">Menopause & Midlife</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="resources.html">Resource Center</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-side">
+          <div class="newsletter">
+            <h4>Stay in the loop</h4>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <p class="small-note">By signing up you agree to our privacy policy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-brand">
+        <img src="media/logo.png" class="footer-logo" alt="HealthCare Plus Logo">
+        <span>HealthCare Plus</span>
+      </div>
+
+      <div class="footer-meta">
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="based">Based on 3,695 reviews</span>
+        </div>
+        <div class="links">
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="security.html">Security</a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

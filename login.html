@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — HealthCare Plus</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f8;
+}
+
+header {
+  background: #ffffff;
+  padding: 14px 0;
+  box-shadow: 0 5px 18px rgba(11,61,145,0.06);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.auth-box {
+  background: white;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(4,20,40,0.06);
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+}
+
+.auth-box h2 {
+  color: #0b3d91;
+  margin-bottom: 8px;
+}
+
+.auth-box p {
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background: #05a39a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.auth-links {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-links a {
+  color: #0b66ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="media/logo.png" alt="HealthCare Plus Logo">
+      <span>HealthCare Plus</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-earth-africa"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-truck-medical"></i> Services</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="auth-box">
+    <h2>Sign in to your account</h2>
+    <p>Access appointments and medical services.</p>
+
+    <form class="auth-form" onsubmit="return false;">
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="auth-links">
+      <a href="signup.html">Create account</a>
+      <a href="forgot.html">Forgot password?</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 HealthCare Plus
+</footer>
+
+</body>
+</html>
