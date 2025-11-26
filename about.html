@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,66 +9,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
-.page-hero {
-    background: #e8f1ff;
-    padding: 60px 20px;
-    text-align: center;
-}
+    .page-hero {
+      background: var(--bg-body);
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.page-hero-inner h1 {
-    font-size: 38px;
-    color: #0b3d91;
-}
+    .page-hero-inner h1 {
+      font-size: 38px;
+      color: var(--primary);
+    }
 
-.page-hero-inner p {
-    max-width: 700px;
-    margin: 10px auto;
-    color: #355079;
-    font-size: 16px;
-}
+    .page-hero-inner p {
+      max-width: 700px;
+      margin: 10px auto;
+      color: var(--text-muted);
+      font-size: 16px;
+    }
 
-.about-mission {
-    padding: 40px 20px;
-    text-align: center;
-}
+    .about-mission {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-.about-mission h2 {
-    font-size: 30px;
-    color: #007BFF;
-    margin-bottom: 10px;
-}
+    .about-mission h2 {
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
 
-.about-mission p {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    color: #333;
-}
+    .about-mission p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      color: var(--text-main);
+    }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-.grid-3 {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    .grid-3 {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-.feature {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    .feature {
+      background: var(--bg-card);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 12px var(--shadow-color);
+    }
 
-.feature h3 {
-    color: #007BFF;
-    margin-bottom: 8px;
-}
-</style>
+    .feature h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+  </style>
 
 </head>
 
@@ -78,14 +79,28 @@
         <img src="media/logo.png" alt="HealthCare Plus Logo">
         <span>HealthCare Plus</span>
       </div>
-      <ul class="nav-links">
+      <ul class="nav-center">
         <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="about.html"><i class="fa-solid fa-earth-africa"></i> About</a></li>
+        <li><a href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+        <li><a href="departments.html"><i class="fa-solid fa-hospital"></i> Departments</a></li>
         <li><a href="services.html"><i class="fa-solid fa-truck-medical"></i> Services</a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
-        <li class="spacer" aria-hidden="true"></li>
+        <li><a href="appointments.html"><i class="fa-solid fa-calendar-check"></i> Book Now</a></li>
+      </ul>
+
+      <ul class="nav-right">
         <li><a class="login-btn" href="login.html">Login</a></li>
         <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+        <li>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-checkbox">
+              <input type="checkbox" id="theme-checkbox" />
+              <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+              </div>
+            </label>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -94,14 +109,16 @@
     <section class="page-hero">
       <div class="page-hero-inner">
         <h1>About HealthCare Plus</h1>
-        <p>We provide compassionate, accessible care for women and families. Our team includes experienced clinicians, counselors, and specialists who support you every step of the way.</p>
+        <p>We provide compassionate, accessible care for women and families. Our team includes experienced clinicians,
+          counselors, and specialists who support you every step of the way.</p>
       </div>
     </section>
 
     <section class="about-mission">
       <div class="container">
         <h2>Our Mission</h2>
-        <p>To make high-quality health care simple, personal, and convenient for everyone. We combine clinical expertise with digital tools to support your health journey.</p>
+        <p>To make high-quality health care simple, personal, and convenient for everyone. We combine clinical expertise
+          with digital tools to support your health journey.</p>
 
         <div class="grid-3">
           <div class="feature">
@@ -158,8 +175,8 @@
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About us</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="press.html">Press</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -180,6 +197,22 @@
               <button type="submit">Subscribe</button>
             </form>
             <p class="small-note">By signing up you agree to our privacy policy.</p>
+            <div class="app-buttons">
+              <a href="#" class="app-btn">
+                <i class="fa-brands fa-apple"></i>
+                <div class="app-btn-text">
+                  <span>Download on the</span>
+                  <span>App Store</span>
+                </div>
+              </a>
+              <a href="#" class="app-btn">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="app-btn-text">
+                  <span>Get it on</span>
+                  <span>Google Play</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -216,5 +249,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

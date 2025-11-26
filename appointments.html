@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book Appointment - HealthCare Plus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="media/logo.png" alt="HealthCare Plus Logo">
+                <span>HealthCare Plus</span>
+            </div>
+
+            <ul class="nav-center">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+                <li><a href="departments.html"><i class="fa-solid fa-hospital"></i> Departments</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-truck-medical"></i> Services</a></li>
+                <li><a href="appointments.html"><i class="fa-solid fa-calendar-check"></i> Book Now</a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li><a class="login-btn" href="login.html">Login</a></li>
+                <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+                <li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="theme-checkbox">
+                            <input type="checkbox" id="theme-checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-card" style="max-width: 600px;">
+            <h2>Book an Appointment</h2>
+            <p>Schedule a visit with one of our specialists.</p>
+
+            <form class="auth-form" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="fullname">Patient Name</label>
+                    <input type="text" id="fullname" placeholder="Enter full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Doctor (Optional)</label>
+                    <select id="doctor">
+                        <option value="">Any Available Doctor</option>
+                        <option value="seth">Dr. Ashok Seth (Cardiology)</option>
+                        <option value="patir">Dr. Rana Patir (Neurology)</option>
+                        <option value="nangia">Dr. Sapna Nangia (Oncology)</option>
+                        <option value="oberoi">Dr. IPS Oberoi (Orthopedics)</option>
+                        <option value="kriplani">Dr. Alka Kriplani (Gynecology)</option>
+                        <option value="sibal">Dr. Anupam Sibal (Pediatrics)</option>
+                    </select>
+                </div>
+
+                <div class="date-time-group">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time">
+                            <option value="morning">Morning (9AM - 12PM)</option>
+                            <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                            <option value="evening">Evening (4PM - 6PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Visit</label>
+                    <input type="text" id="reason" placeholder="Briefly describe your symptoms" required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <!-- Footer content same as other pages -->
+        <div class="footer-top">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Join HealthCare Plus</h4>
+                    <ul>
+                        <li><a href="employers.html">Employers</a></li>
+                        <li><a href="plans.html">Health Plans</a></li>
+                        <li><a href="consultants.html">Consultants</a></li>
+                        <li><a href="individuals.html">Individuals</a></li>
+                        <li><a href="providers.html">Become a Provider</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="fertility.html">Fertility & Family</a></li>
+                        <li><a href="maternity.html">Maternity & Newborn</a></li>
+                        <li><a href="parenting.html">Parenting & Pediatrics</a></li>
+                        <li><a href="menopause.html">Menopause & Midlife</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Resource Center</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="webinars.html">Webinars</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-side">
+                    <div class="newsletter">
+                        <h4>Stay in the loop</h4>
+                        <form class="newsletter-form" onsubmit="return false;">
+                            <input type="email" placeholder="Enter your email" required />
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p class="small-note">By signing up you agree to our privacy policy.</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <i class="fa-brands fa-apple"></i>
+                                <div class="app-btn-text">
+                                    <span>Download on the</span>
+                                    <span>App Store</span>
+                                </div>
+                            </a>
+                            <a href="#" class="app-btn">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div class="app-btn-text">
+                                    <span>Get it on</span>
+                                    <span>Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <img src="media/logo.png" class="footer-logo" alt="HealthCare Plus Logo">
+                <span>HealthCare Plus</span>
+            </div>
+
+            <div class="footer-meta">
+                <div class="rating">
+                    <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="based">Based on 3,695 reviews</span>
+                </div>
+                <div class="links">
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="security.html">Security</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

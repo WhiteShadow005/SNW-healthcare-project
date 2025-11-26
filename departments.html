@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Departments — HealthCare Plus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="media/logo.png" alt="HealthCare Plus Logo">
+                <span>HealthCare Plus</span>
+            </div>
+
+            <ul class="nav-center">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+                <li><a href="departments.html" class="active"><i class="fa-solid fa-hospital"></i> Departments</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-truck-medical"></i> Services</a></li>
+                <li><a href="appointments.html"><i class="fa-solid fa-calendar-check"></i> Book Now</a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <li><a class="login-btn" href="login.html">Login</a></li>
+                <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
+                <li>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="theme-checkbox">
+                            <input type="checkbox" id="theme-checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <h1>Our Medical Departments</h1>
+            <p>World-class specialized care across a wide range of medical disciplines.</p>
+        </div>
+    </section>
+
+    <section class="departments-grid-section">
+        <div class="container">
+            <div class="departments-grid" id="departments-grid">
+                <!-- Departments will be loaded here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-brand">
+                        <img src="media/logo.png" alt="HealthCare Plus Logo">
+                        <span>HealthCare Plus</span>
+                    </div>
+                    <p>Providing world-class healthcare with compassion and excellence since 2023.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fa-brands fa-apple"></i>
+                            <div class="app-btn-text">
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div class="app-btn-text">
+                                <span>GET IT ON</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="appointments.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="department-details.html?id=cardiology">Cardiology</a></li>
+                        <li><a href="department-details.html?id=neurology">Neurology</a></li>
+                        <li><a href="department-details.html?id=orthopedics">Orthopedics</a></li>
+                        <li><a href="department-details.html?id=pediatrics">Pediatrics</a></li>
+                        <li><a href="department-details.html?id=dermatology">Dermatology</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get health tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-meta">
+                <p>&copy; 2024 HealthCare Plus. All rights reserved.</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="departments-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Simple script to render the grid on the main page
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('departments-grid');
+            if (grid && typeof departmentsData !== 'undefined') {
+                Object.keys(departmentsData).forEach(key => {
+                    const dept = departmentsData[key];
+                    const card = document.createElement('div');
+                    card.className = 'department-card';
+                    card.innerHTML = `
+                    <div class="dept-icon"><i class="fa-solid ${dept.icon}"></i></div>
+                    <h3>${dept.name}</h3>
+                    <p>${dept.description}</p>
+                    <a href="department-details.html?id=${key}" class="btn-outline">Learn More</a>
+                `;
+                    grid.appendChild(card);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
