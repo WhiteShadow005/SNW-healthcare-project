@@ -3,7 +3,7 @@ const departmentsData = {
         "name": "Cardiology",
         "icon": "fa-heart-pulse",
         "description": "Comprehensive care for your heart and vascular system.",
-        "heroImage": "media/cardiology-hero.jpg", // Placeholder, will use CSS gradient/pattern if image missing
+        "heroImage": "media/cardiology-hero.jpg",
         "overview": "Our Cardiology department offers state-of-the-art diagnostic and therapeutic services for patients with heart and vascular disorders. Our team of renowned cardiologists uses the latest technology to provide personalized care.",
         "conditions": [
             "Coronary Artery Disease",
