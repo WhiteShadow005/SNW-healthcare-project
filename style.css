@@ -2,23 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg-body: #F0F4F8;
-    --bg-card: #ffffff;
-    --bg-glass: rgba(255, 255, 255, 0.95);
-    --text-main: #2D2D2D;
-    --text-muted: #666666;
-    --primary: #5D3FD3;
-    --secondary: #00CDAC;
-    --accent: #FF6B6B;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(0, 0, 0, 0.15);
-    --border-color: #e0e0e0;
-    --input-bg: #ffffff;
-    --footer-bg: #1A1A2E;
-    --footer-text: #b0b0c0;
-}
-
-body.dark-mode {
     --bg-body: #111827;
     --bg-card: #2D3748;
     --bg-glass: rgba(45, 55, 72, 0.95);
@@ -537,79 +520,6 @@ nav {
     align-items: center;
 }
 
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.theme-switch {
-    display: inline-block;
-    height: 26px;
-    position: relative;
-    width: 50px;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
-}
-
-.slider:before {
-    background-color: #fff;
-    bottom: 3px;
-    content: "";
-    height: 20px;
-    left: 3px;
-    position: absolute;
-    transition: .4s;
-    width: 20px;
-    z-index: 2;
-}
-
-input:checked+.slider {
-    background-color: var(--primary);
-}
-
-input:checked+.slider:before {
-    transform: translateX(24px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.slider .fa-sun {
-    color: #f39c12;
-    font-size: 12px;
-    z-index: 1;
-    order: 1;
-}
-
-.slider .fa-moon {
-    color: #f1c40f;
-    font-size: 12px;
-    z-index: 1;
-    order: 2;
-    color: white;
-}
 
 .footer-social {
     display: flex;

@@ -21,16 +21,7 @@ const departmentsData = {
             "Stress Testing",
             "Holter Monitoring"
         ],
-        "faqs": [
-            {
-                "question": "What are the early signs of heart disease?",
-                "answer": "Common signs include chest pain, shortness of breath, fatigue, and irregular heartbeats. However, some people may have no symptoms."
-            },
-            {
-                "question": "How often should I have a heart check-up?",
-                "answer": "It depends on your age and risk factors. Generally, adults should have their blood pressure checked at least once every two years and cholesterol every 4-6 years."
-            }
-        ]
+
     },
     "orthopedics": {
         "name": "Orthopedics",
@@ -53,16 +44,7 @@ const departmentsData = {
             "Physical Therapy",
             "Pain Management Injections"
         ],
-        "faqs": [
-            {
-                "question": "When should I see an orthopedic doctor?",
-                "answer": "You should see a specialist if you have persistent pain, difficulty moving a joint, or an injury that doesn't improve with rest."
-            },
-            {
-                "question": "Is surgery always necessary for joint pain?",
-                "answer": "No, we prioritize non-surgical treatments like physical therapy, medication, and lifestyle changes whenever possible."
-            }
-        ]
+
     },
     "neurology": {
         "name": "Neurology",
@@ -85,16 +67,7 @@ const departmentsData = {
             "Botox Therapy for Migraines",
             "Stroke Rehabilitation"
         ],
-        "faqs": [
-            {
-                "question": "What are the warning signs of a stroke?",
-                "answer": "Remember FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services."
-            },
-            {
-                "question": "Can migraines be cured?",
-                "answer": "While there is no cure, migraines can be effectively managed with medication and lifestyle changes."
-            }
-        ]
+
     },
     "pediatrics": {
         "name": "Pediatrics",
@@ -117,16 +90,7 @@ const departmentsData = {
             "Treatment of Acute Illnesses",
             "Nutritional Counseling"
         ],
-        "faqs": [
-            {
-                "question": "When should my child get their first check-up?",
-                "answer": "The first check-up usually happens within a few days of leaving the hospital after birth."
-            },
-            {
-                "question": "Are vaccines safe for my child?",
-                "answer": "Yes, vaccines are rigorously tested and are the safest way to protect your child from serious diseases."
-            }
-        ]
+
     },
     "gynecology": {
         "name": "Gynecology",
@@ -149,16 +113,7 @@ const departmentsData = {
             "Laparoscopic Surgery",
             "Family Planning Services"
         ],
-        "faqs": [
-            {
-                "question": "How often should I have a Pap smear?",
-                "answer": "Generally, women should start getting Pap smears at age 21 and continue every 3 years if results are normal."
-            },
-            {
-                "question": "What services do you offer for expectant mothers?",
-                "answer": "We offer complete prenatal care, high-risk pregnancy management, and delivery services."
-            }
-        ]
+
     },
     "dermatology": {
         "name": "Dermatology",
@@ -181,16 +136,7 @@ const departmentsData = {
             "Chemical Peels",
             "Cryotherapy"
         ],
-        "faqs": [
-            {
-                "question": "How can I prevent skin cancer?",
-                "answer": "Use sunscreen daily, avoid excessive sun exposure, and check your skin regularly for changes."
-            },
-            {
-                "question": "Do you offer cosmetic dermatology?",
-                "answer": "Yes, we offer various cosmetic procedures including anti-aging treatments and scar revision."
-            }
-        ]
+
     },
     "general-medicine": {
         "name": "General Medicine",
@@ -213,16 +159,7 @@ const departmentsData = {
             "Pre-operative Clearance",
             "Health Education"
         ],
-        "faqs": [
-            {
-                "question": "Do I need a referral to see a general physician?",
-                "answer": "No, you can book an appointment directly for any general health concern."
-            },
-            {
-                "question": "What should I bring to my appointment?",
-                "answer": "Please bring your ID, insurance card, and a list of current medications."
-            }
-        ]
+
     },
     "emergency-care": {
         "name": "Emergency Care",
@@ -245,15 +182,6 @@ const departmentsData = {
             "Diagnostic Imaging (CT, X-ray)",
             "Critical Care Management"
         ],
-        "faqs": [
-            {
-                "question": "When should I go to the ER vs. Urgent Care?",
-                "answer": "Go to the ER for life-threatening conditions. For minor injuries or illnesses, Urgent Care is appropriate."
-            },
-            {
-                "question": "What are the wait times?",
-                "answer": "Wait times vary based on the severity of patients' conditions. Critical cases are always prioritized."
-            }
-        ]
+
     }
 };

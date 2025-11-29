@@ -28,17 +28,7 @@
             <ul class="nav-right">
                 <li><a class="login-btn" href="login.html">Login</a></li>
                 <li><a class="signup-btn" href="signup.html">Sign Up</a></li>
-                <li>
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="theme-checkbox">
-                            <input type="checkbox" id="theme-checkbox" />
-                            <div class="slider round">
-                                <i class="fas fa-sun"></i>
-                                <i class="fas fa-moon"></i>
-                            </div>
-                        </label>
-                    </div>
-                </li>
+
             </ul>
         </nav>
     </header>
@@ -73,12 +63,7 @@
                 </div>
             </div>
 
-            <div class="dept-faqs">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-list" id="dept-faqs-list">
-                    <!-- FAQs -->
-                </div>
-            </div>
+
 
             <div class="cta-section">
                 <h2>Need to see a specialist?</h2>
@@ -117,7 +102,7 @@
                     <ul>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="doctors.html">Doctors</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -194,7 +179,7 @@
     </footer>
 
     <script src="departments-data.js"></script>
-    <script src="script.js"></script>
+
     <script>
         // Logic to populate page based on URL param
         document.addEventListener('DOMContentLoaded', () => {
@@ -224,17 +209,7 @@
                     proceduresList.appendChild(li);
                 });
 
-                // FAQs
-                const faqList = document.getElementById('dept-faqs-list');
-                data.faqs.forEach(faq => {
-                    const details = document.createElement('details');
-                    details.className = 'faq-item';
-                    details.innerHTML = `
-                    <summary>${faq.question} <i class="fa-solid fa-chevron-down"></i></summary>
-                    <p>${faq.answer}</p>
-                `;
-                    faqList.appendChild(details);
-                });
+
             } else {
                 document.querySelector('.container').innerHTML = '<h2>Department not found.</h2><p>Please return to the <a href="departments.html">Departments page</a>.</p>';
             }
