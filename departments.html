@@ -42,11 +42,58 @@
 
     <section class="departments-grid-section">
         <div class="container">
-            <div class="departments-grid" id="departments-grid">
-
-
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive care for your heart and vascular system.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-bone"></i></div>
+                    <h3>Orthopedics</h3>
+                    <p>Expert care for bones, joints, ligaments, and muscles.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Neurology</h3>
+                    <p>Advanced treatment for disorders of the brain and nervous system.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-child"></i></div>
+                    <h3>Pediatrics</h3>
+                    <p>Compassionate healthcare for infants, children, and adolescents.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+                    <h3>Gynecology</h3>
+                    <p>Women's health services including maternity and reproductive care.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-hand-dots"></i></div>
+                    <h3>Dermatology</h3>
+                    <p>Expert care for skin, hair, and nail conditions.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3>General Medicine</h3>
+                    <p>Primary care for overall health and chronic disease management.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <div class="dept-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 rapid response for critical medical situations.</p>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
+                </div>
             </div>
         </div>
+
     </section>
 
     <footer class="site-footer">
@@ -154,29 +201,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="departments-data.js"></script>
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const grid = document.getElementById('departments-grid');
-            if (grid && typeof departmentsData !== 'undefined') {
-                Object.keys(departmentsData).forEach(key => {
-                    const dept = departmentsData[key];
-                    const card = document.createElement('div');
-                    card.className = 'department-card';
-                    card.innerHTML = `
-                    <div class="dept-icon"><i class="fa-solid ${dept.icon}"></i></div>
-                    <h3>${dept.name}</h3>
-                    <p>${dept.description}</p>
-                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
-                `;
-                    grid.appendChild(card);
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>
