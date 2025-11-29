@@ -1036,7 +1036,7 @@ select:focus {
     font-weight: 700;
 }
 
-/* Department Details Hero */
+
 #dept-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('media/department_card_bg.png');
     background-size: cover;
@@ -1065,7 +1065,7 @@ select:focus {
     margin: 0 auto;
 }
 
-/* Department Overview with Background Image */
+
 .overview-bg-section {
     background-image: url('media/department_overview_bg.png');
     background-size: cover;
@@ -1096,7 +1096,7 @@ select:focus {
     color: #f0f0f0;
 }
 
-/* Unified Department Hero */
+
 #dept-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/department_overview_bg.png');
     background-size: cover;
@@ -1107,7 +1107,7 @@ select:focus {
     justify-content: center;
     text-align: center;
     min-height: 60vh;
-    /* Increased height for more content */
+
     border-radius: 0 0 24px 24px;
     margin-bottom: 40px;
     padding: 60px 20px;

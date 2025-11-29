@@ -43,7 +43,8 @@
     <section class="departments-grid-section">
         <div class="container">
             <div class="departments-grid" id="departments-grid">
-                <!-- Departments will be loaded here via JS -->
+
+
             </div>
         </div>
     </section>
@@ -157,7 +158,7 @@
     <script src="departments-data.js"></script>
 
     <script>
-        // Simple script to render the grid on the main page
+
         document.addEventListener('DOMContentLoaded', () => {
             const grid = document.getElementById('departments-grid');
             if (grid && typeof departmentsData !== 'undefined') {
@@ -169,7 +170,7 @@
                     <div class="dept-icon"><i class="fa-solid ${dept.icon}"></i></div>
                     <h3>${dept.name}</h3>
                     <p>${dept.description}</p>
-                    <a href="department-details.html?id=${key}" class="btn-outline">Learn More</a>
+                    <a href="javascript:void(0)" class="btn-outline" style="cursor: default;">Learn More</a>
                 `;
                     grid.appendChild(card);
                 });
